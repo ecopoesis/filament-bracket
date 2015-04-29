@@ -12,12 +12,12 @@ difference() {
 	translate([101.5,0,31])
 	screw_hole();
 
-	translate([1,132,0])
+	translate([15,132,0])
 	cylinder(h=50, r=9.5, $fn=100);
 
 	// cutout
 	translate([120,150,0])
-	resize([190,220,50])
+	resize([170,220,50])
 	linear_extrude(height=50)
 	circle(1, $fn=100);
 }
